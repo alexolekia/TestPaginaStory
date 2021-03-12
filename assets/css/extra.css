@@ -1,0 +1,14 @@
+.overlay-img{
+  
+}
+
+.overlay-img-div {
+    position: absolute;
+    height: 25%;
+    width: 80%;
+    padding: 10%;
+    left: 20%;
+    top: 50%;
+    border: 1px solid black;
+    z-index: 0;
+}
