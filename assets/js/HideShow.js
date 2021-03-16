@@ -2,9 +2,10 @@ var counterimg = 0;
 
 
 $(document).ready(function () {
-    alert("La página cuenta con controles de estilo interactuables. Explora para elegir un tema adecuado. \n Todas las imágenes serán reemplazadas, así que ellas no cuentan para la paleta de colores")
+    //alert("La página cuenta con controles de estilo interactuables. Explora para elegir un tema adecuado. \n Todas las imágenes serán reemplazadas, así que ellas no cuentan para la paleta de colores")
     $(".HideShow").click(function (e) {
-        $(".Controles").toggle();
+        //$(".Controles").toggle();
+        $(".ControlDeEstilo").toggle();
     });
     $(".imgSource").click(function (e) {
         //$(document).getElementById("img").src = "http://placebear.com/600x600";
@@ -30,4 +31,23 @@ $(document).ready(function () {
         });
         counterimg+=1;
     });
+
+    configurarInicio();
+    $(".icono").click(function (e) {
+        $("#navbar ul").toggleClass("lista-small");
+    });
+
+
+    function configurarInicio() {
+        var urlPath = window.location.pathname;
+        $("nav a").each(function () {
+            var href = $(this).attr("href");
+            var indice = urlPath.length - href.length;
+            if (urlPath.substring(indice) === href) {
+                $(this).closest('li').addClass("active");
+            };
+        });
+    };
+
+
 });
