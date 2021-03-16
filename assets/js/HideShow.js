@@ -1,6 +1,6 @@
 var counterimg = 0;
 
-
+/*
 $(document).ready(function () {
     //alert("La página cuenta con controles de estilo interactuables. Explora para elegir un tema adecuado. \n Todas las imágenes serán reemplazadas, así que ellas no cuentan para la paleta de colores")
     $(".HideShow").click(function (e) {
@@ -39,15 +39,58 @@ $(document).ready(function () {
 
 
     function configurarInicio() {
-        var urlPath = window.location.pathname;
+        var urlPathHash = window.location.hash;
         $("nav a").each(function () {
             var href = $(this).attr("href");
-            var indice = urlPath.length - href.length;
-            if (urlPath.substring(indice) === href) {
+            console.log(href, urlPathHash);
+            if (urlPathHash === href) {
                 $(this).closest('li').addClass("active");
             };
         });
     };
+
+
+});
+*/
+var hashdata = "Inicio";
+
+$(document).on('scroll', function (e) {
+    $('section').each(function () {
+        
+        if ($(this).offset().top < window.pageYOffset + 5
+            && $(this).offset().top +
+            $(this).height() > window.pageYOffset + 5
+        ) {
+            hashdata = $(this).attr('id');
+            if (hashdata === "second") {
+                hashdata = "Servicios";
+            }
+            if (hashdata === "temp") {
+                hashdata = "Metodologia";
+            }
+
+            if (hashdata === "MyV") {
+                hashdata = "MisionyVision";
+            }
+            //console.log($(this).height(), $(this).offset().top,hashdata );
+            window.location.hash = hashdata;
+        }
+    });
+    configurarInicio();
+    function configurarInicio() {
+        var urlPathHash = window.location.hash;
+        $("nav a").each(function () {
+            var href = $(this).attr("href");
+            console.log(href, urlPathHash);
+            if (urlPathHash === href) {
+                $(this).closest('li').addClass("active");
+            } else {
+                $(this).closest('li').removeClass("active");
+            }
+            ;
+        });
+    };
+
 
 
 });
