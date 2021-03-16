@@ -1,0 +1,27 @@
+#wrapper > .color1 {
+			background-color: #30363d;
+		}
+
+		#wrapper > .color2 {
+			background-color: #db8992;
+		}
+
+		#wrapper > .color3 {
+			background-color: #ab7aad;
+		}
+
+		#wrapper > .color4 {
+			background-color: #897cad;
+		}
+
+		#wrapper > .color5 {
+			background-color: #7794ce;
+		}
+
+		#wrapper > .color6 {
+			background-color: #64abb4;
+		}
+
+		#wrapper > .color7 {
+			background-color: #6ba78c;
+		}
