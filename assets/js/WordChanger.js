@@ -24,5 +24,5 @@ function _animate_logo() {
 
 $(document).ready(function () {
     setInterval("_changeText()", 1500);
-    setInterval(_animate_logo, 500);
+   // setInterval(_animate_logo, 500);
 });
