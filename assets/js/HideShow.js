@@ -62,7 +62,7 @@ $(document).ready(function () {
         $("#navbar ul").toggleClass("lista-small");
     });
 
-    function logodisplay() {
+   /* function logodisplay() {
         console.log(LogoOlekiaColores.src);
         LogoOlekiaColores.src = srcs[logo_count];
         console.log(LogoOlekiaColores.src);
@@ -71,7 +71,7 @@ $(document).ready(function () {
         console.log("changed", logo_count);
     }
 
-    setInterval(logodisplay, 3000);
+    setInterval(logodisplay, 3000);*/
 });
 
 var hashdata = "Inicio";
