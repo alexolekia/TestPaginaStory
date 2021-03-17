@@ -1,4 +1,4 @@
-var words = ["conocimiento", "experiencia","datos","inteligencia","saber"];
+var words = ["conocimiento", "información","experiencia","datos","inteligencia","saber"];
 var i = 0;
 var j = 0;
 var how_many_words = words.length;
@@ -21,8 +21,14 @@ function _animate_logo() {
     olekia_texto_inicial.innerHTML = textologo[j];
 }
 
+var navbar = document.querySelector("#navbar");
+
+function crazy()  {
+    console.log(navbar);
+};
 
 $(document).ready(function () {
     setInterval("_changeText()", 1500);
-   // setInterval(_animate_logo, 500);
+    //setInterval(_animate_logo, 500);
+    //setInterval(crazy, 500);
 });
