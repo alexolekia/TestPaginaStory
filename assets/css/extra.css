@@ -32,9 +32,9 @@
     color: #FFF;
 }
 
-    #navbar li.active a {
-        background-color: #64abb4;
-    }
+#navbar li.active a {
+    background-color: #64abb4;
+}
 
     #navbar li a:hover {
         background-color: #ab7aad;
@@ -50,7 +50,10 @@
     position:relative;
     margin:0%;
     padding:0%;
+    width:100%;
 }
+
+
 
 .contenedor {
     position: relative;
@@ -97,5 +100,13 @@
 
 
 
+ul li{
+    padding:0 7px;
+}
 
-
+@media screen and (max-width: 1280px) {
+    #animacionTexto {
+        margin-top: 0%;
+    }
+   
+}
