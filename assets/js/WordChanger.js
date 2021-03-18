@@ -1,4 +1,4 @@
-var words = ["conocimiento", "información","experiencia","datos","inteligencia","saber"];
+var words = ["conocimiento", "informacio&#769n","experiencia","datos","inteligencia","saber"];
 var i = 0;
 var j = 0;
 var how_many_words = words.length;

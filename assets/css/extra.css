@@ -1,21 +1,3 @@
-.overlay-img{
-  
-}
-
-.overlay-img-div {
-    position: absolute;
-    height: 25%;
-    width: 80%;
-    padding: 10%;
-    left: 20%;
-    top: 50%;
-    border: 1px solid black;
-    z-index: 0;
-}
-
-#bannermod {
-}
-
 #navbar {
     background-color: #000;
     position: fixed;
@@ -50,13 +32,13 @@
     color: #FFF;
 }
 
-#navbar li.active a {
-    background-color: indianred;
-}
+    #navbar li.active a {
+        background-color: #64abb4;
+    }
 
-#navbar li a:hover {
-    background-color: #64abb4;
-}
+    #navbar li a:hover {
+        background-color: #ab7aad;
+    }
 
 .icono {
     display: none;
@@ -64,7 +46,11 @@
     height: 3em;
 }
 
-
+.LogoInicial{
+    position:relative;
+    margin:0%;
+    padding:0%;
+}
 
 .contenedor {
     position: relative;
@@ -74,24 +60,10 @@
 }
 
 
-.TextoInicial {
-    position: absolute;
-    bottom: 6%;
-    left: 30px;
-    font: bold 80px arial;
-}
-
-.LogoInicial {
-
-}
-
 #animacionTexto {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
-.imgLogoAlternativo{
-    display: none;
-}
 
 
 
@@ -120,17 +92,6 @@
         margin-top:0;
     }
 
-    .TextoInicial{
-        display:none;
-    }
-
-    .imgLogoInicial {
-        display: none;
-    }
-
-    .imgLogoAlternativo {
-        display: block;
-    }
 
 }
 
